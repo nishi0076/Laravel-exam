@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{param}', [TestController::class, 'index']);
+Route::get('/', [TestController::class, 'index']);
+
+Route::get('/{param}', [TestController::class, 'nom']);
+
 
